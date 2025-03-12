@@ -69,6 +69,6 @@ npm-debug.log
 # Ignora archivos de Mac
 .DS_Store
 
-# Ignora archivos de Rider
+# Ignore Rider files
 .idea/
 *.sln.iml
