@@ -29,21 +29,26 @@ namespace Api.Controllers
 
         //2. Metodo GetProduct
 
-        [HttpGet("{id}")]
-        public string GetProduct(int id) 
+        [HttpGet("GetProduct")]
+        public IActionResult GetProduct(int id)
         {
-
-            // Modicafores de acceso 
-            // Clases
-            // Expresión Ternaria 
-            // Funciones de flecha vs funcion c# 
-            // que es un Objeto 
-            // Parametros
-
-            return "producto" + id;
-
-        } 
+            var product = new { Id = id, Name = "Product " + id };
+            return Ok(product);
+        }
 
         //3. Crear Una Lista de Productos 
+
+        [HttpGet("GetProductsList")]
+        public List<string> GetProductsList()
+        {
+            return new List<string>
+    {
+        "Arroz",
+        "Frijoles",
+        "Aceite",
+        "Azúcar"
+    };
+        }
+
     }
 }
