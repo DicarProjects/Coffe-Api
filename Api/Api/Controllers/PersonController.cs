@@ -42,12 +42,12 @@ namespace Api.Controllers
         public List<string> GetProductsList()
         {
             return new List<string>
-    {
-        "Arroz",
-        "Frijoles",
-        "Aceite",
-        "Azúcar"
-    };
+            {
+                "Arroz",
+                "Frijoles",
+                "Aceite",
+                "Azúcar"
+            };
         }
 
     }
