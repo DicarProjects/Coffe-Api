@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Api.models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers
 {
@@ -36,15 +37,13 @@ namespace Api.Controllers
             return Ok();
         }
 
-   
-        public List<string> GetProductsList()
+        private List<Product> GetProductList()
         {
-            return new List<string>
+            return new List<Product>
             {
-                "Arroz",
-                "Frijoles",
-                "Aceite",
-                "Azúcar"
+            new Product { Id = 1, Name = "Arroz", IsAvailable = true },
+            new Product { Id = 2, Name = "Aceite", IsAvailable = true },
+            new Product { Id = 3, Name = "Frijol", IsAvailable = true }
             };
         }
 
