@@ -1,6 +1,7 @@
 ﻿namespace Api.models
 {
-    public class Person
+    public class Product
     {
+        
     }
 }
